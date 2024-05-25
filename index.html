@@ -3,56 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seatwork 2</title>
+    <title>Aaron Beltran - Resume</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="#academic">Education</a>
-            <button>Projects</button>
-            <h1>Aaron Beltran</h1>
-            <button>Skills</button>
-            <button>Hobbies</button>
+            <h1></h1>
+            <div class="nav-links">
+                <img src="images/IMG_3669.jpg" alt="Profile">
+                <a href="#education">Education</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#summary">Summary</a>
+                <a href="#hobbies">Hobbies</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
     </header>
 
     <section class="hero">
-        <img src="" alt="">
         <div class="content">
-            <h3>Beltran, Aaron V.</h3>
-            <h2>Resume</h2>
-            
+            <h2>Aaron Beltran</h2>
+            <p>A dedicated FEU Institute of Technology student with a strong background in web development, adaptable and creative, skilled in CSS, HTML, and Java, and passionate about technology, gaming, basketball, and app development.</p>
+            <h3>My Resume</h3>
         </div>
     </section>
 
-    <section class="Elementary">
-        <h4>Elementary</h4>
-        <p>Life Touchers Community School </p>
-        <p>2011-2017</p>
-    </section>
-    <section class="Junior">
-        <h4>Junior Highschool</h4>
-        <p>Sacred Heart Academy of Pasig</p>
-        <p>2017-2021</p>
-    </section>
-    <section class="Senior">
-        <h4>Senior Highschool</h4>
-        <p>Sacred Heart Academy of Pasig</p>
-        <p>2021-2023</p>
-    </section>
-    <section class="College">
-        <h4>College</h4>
-        <p>FEU Institute of Technology.</p>
-        <p>2023-Current</p>
-    </section>
+    <main>
+        <section id="education" class="card">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h4>Elementary (2011-2017)</h4>
+                <li>Life Touchers Community School</li>
+            </div>
+            <div class="education-item">
+                <h4>Junior High School (2017-2021)</h4>
+                <li>Sacred Heart Academy of Pasig</li>
+            </div>
+            <div class="education-item">
+                <h4>Senior High School (2021-2023)</h4>
+                <li>Sacred Heart Academy of Pasig</li>
+            </div>
+            <div class="education-item">
+                <h4>College (2023-Current)</h4>
+                <li>FEU Institute of Technology</li>
+            </div>
+        </section>
 
-    <section class="Achievements">
-        <h5>Achievements</h5>
-        <p>Grade 10 and Senior High School Honor Student</p>
-        <p>Silver Medalist from Varsity Basketball</p>
-        <p>2019-2021</p>
-    </section>
-    
+        <section id="achievements" class="card">
+            <h2>Achievements</h2>
+            <p>Grade 10 With Honors</p>
+            <p>Senior High School With High Honors</p>
+            <p>Silver Medalist Basketball Varsity Team</p>
+        </section>
+
+        <section id="projects" class="card">
+            <h2>Projects</h2>
+            <p>Created an Online Banking System.</p>
+            <p>Made a Website Design.</p>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <ul>
+                <li>Adaptability</li>
+                <li>Good at Communicating</li>
+                <li>Creative</li>
+                <li>Decent Software Knowledge</li>
+                <li>CSS/HTML</li>
+                <li>Java</li>
+            </ul>
+        </section>
+
+        <section id="certifications" class="card">
+            <h2>Certifications</h2>
+            <p>Soon...</p>
+        </section>
+
+        <section id="hobbies" class="card">
+            <h2>Hobbies</h2>
+            <p>Gaming</p>
+            <p>Basketball</p>
+            <p>App Development</p>
+        </section>
+
+        <section id="summary" class="card">
+            <h2>Summary</h2>
+            <p>With a solid educational background from Life Touchers Community School for elementary, Sacred Heart Academy of Pasig for junior and senior high school, and currently pursuing a degree at FEU Institute of Technology, I have laid a strong foundation for academic excellence. My practical experience includes developing an Online Banking System and designing websites, showcasing my adaptability and creativity in software projects. Proficient in CSS, HTML, and Java, I possess a diverse skill set, coupled with effective communication skills. Additionally, I am certified in various areas, further enhancing my professional profile. Beyond academics and work, I enjoy gaming, playing basketball, and exploring app development as hobbies, demonstrating a well-rounded personality and interests.</p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:beltranaaron76@gmail.com">beltranaaron76@gmail.com</a></p>
+        <p>facebook: <a href="https://www.facebook.com/aaron.beltran.1656" target="_blank">Aaron Beltran</a></p>
+        <p>GitHub: <a href="https://github.com/AaronBeltran1" target="_blank">github.com/AaronBeltran1</a></p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/_aaronbeltran/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <button id="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+    <script>
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>
